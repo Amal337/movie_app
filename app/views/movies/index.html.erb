@@ -1,0 +1,28 @@
+<div class= container> 
+
+<div class="carousel-inner">
+<div class="carousel-item active">
+  <%= link_to image_tag("showcase.jpg", size:"1000x500", class: "d-block w-100" )%>
+  <div class="carousel-caption d-md-block img-fluid">
+        <h5>[watch]</h5>
+        <p>The greatest movies of all time.</p>
+  
+</div>
+</div>
+</div>
+</div>
+
+<div class = "movies container">
+    <div class="row">
+      <% @movies.each do |movie| %>
+       <div class="col">
+        <div id="p1" class= "col-md-4">
+          <%= link_to image_tag(movie.image, size: "180x200", alt: "Movie Image"), movie_path(movie) %>
+  
+        </div>
+      </div>
+      <% end %>
+  </div>
+</div>
+
+

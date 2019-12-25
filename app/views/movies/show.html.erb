@@ -1,0 +1,35 @@
+
+<div class="container">
+<div class="embed-responsive embed-responsive-16by9 text-center">
+    <iframe width="550" height="215" src= "<%= @movie.link %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+</div>
+  <div class= "container filmm">
+  <h3><%= @movie.title %></h3>
+    <p><%= @movie.year %> | <%= @movie.duration %> | <%= @movie.genre %></p>  
+    <p>Stars:<%= @movie.starring %></p>
+  </div>
+
+  <div class="container comment">
+    <%=render 'comments/form'%>
+    <div class = "">
+    <% @comment.each do |r| %>
+      <div class = "">
+        <%=r.comment%>
+        <%=r.rate%>
+        <br>
+         <% if current_user.id == r.user_id %>
+         
+         <p><a class="glyphicon glyphicon-edit" href="<%= edit_comment_path(r.id) %>" >
+           </a>    
+           <a class="glyphicon glyphicon-trash" data-confirm="Are you sure you want to delete <%= r.comment%>?" data-method="delete" href="comments/<%= r.id%>" rel="nofollow">
+           </a> 
+         </p>
+         <% "current #{current_user.id}" %>
+         <br>
+        <%end%>
+    <%end%> 
+       </div>
+    </div>
+</div>
+
+  

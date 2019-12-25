@@ -1,0 +1,162 @@
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ body {
+    background-color: black;
+ }
+
+ .neon{
+     font-weight: bolder;
+     font-size: 1.5em;
+     transition: translate(-50%, -50%);
+     color: #fff;
+     text-shadow: 0 0 20px #ff005b;
+
+ }
+.filmm{
+    box-sizing: border-box;
+    font-size: 18px;
+    color: ivory;
+    border: 10px;
+    background: rgba(37, 37, 51, 0.8);
+    padding: 20px;
+    color: #fff;
+    margin: 0 0 30px 0;
+}
+
+.comment{
+    box-sizing: border-box;
+    font-size: 14px;
+    color: ivory;
+    border: 10px;
+    background: rgba(37, 37, 51, 0.8);
+    padding: 20px;
+    color: #fff;
+    margin: 0 0 30px 0;
+    border-bottom: 10px solid black;
+
+}
+ .neon:after{
+     content: attr(data-text);
+     position: absolute;
+     top: 0;
+     left: 0;
+     padding: 0 20px;
+     z-index: -1;
+     color: #ff005b;
+     filter: blur(15px);
+ }
+ 
+
+.text-block{
+    position: absolute;
+    bottom: 1px;
+    right: 140px;
+    color: blanchedalmond;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 50px;
+    border: 1px;
+    text-align: center;
+}
+
+
+.jumbotron{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+footer{
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: ivory;
+    border: 10px;
+    padding: 20px;
+    color: #fff;
+    padding-top: 40px;
+
+}
+
+.wrap{
+    max-width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(37, 37, 51, 0.8);
+    box-sizing: border-box;
+    padding: 40px;
+    color: black;
+    margin-top: 100px;
+
+}
+
+#sign{
+    text-align: center;
+}
+
+.field{
+   width: 100%;
+   box-sizing: border-box;
+   padding: 12px 5px;
+   background-color:  rgba(37, 37, 51, 0.8);
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   margin: 5px;
+   font-weight: bold;
+}
+
+.btnn{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline:none;
+    border: none;
+    background: #60adde;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+
+.carousel-caption{
+    bottom: 270px;
+
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+
+}
+
+.carousel-caption p{
+    
+    margin: auto;
+    font-size: 30px;
+    line-height: 1.9;
+}
+
+navbar-light .navbar-brand{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.user h4{
+    color: #fff;
+}

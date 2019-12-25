@@ -1,0 +1,19 @@
+<div class = "container">
+<h2> Comments</h2>
+<%= form_for @comment do |f| %>
+    <div class= "input-field col s6">
+        <%= f.label :comment, 'Comment'%>
+        <%= f.text_area :comment%>
+    </div>
+
+    <div class="input-field col s6">
+        <%= f.label :rate, 'rate: 5/' %>
+        <%= f.select :rate, ["1","2","3","4","5"] %>
+    </div>
+   
+    <%= f.submit "Submit", :class => "btn waves-effect waves-light" %>
+
+  <% end %>
+</div>
+
+

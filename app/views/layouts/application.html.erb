@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+  <body>
+  <%= render 'layouts/nav' %>
+    <%= yield %>
+  </body>
+  <footer class = "container">
+  <div> <strong> &copy; Copyright 2019, Amal </strong> </div>
+  <nav class= "navbar navbar-expand-md justify-content-center > 
+        <div>
+           <div class = "nav navbar-nav">
+            <p class="nav-item"> <%= link_to "Home | " , root_path, class: "navbar-link" %> </p>
+            <p class="nav-item"> <%= link_to "Contact | ", root_path, class: "navbar-link" %> </p>
+            <p class="nav-item"> <%= link_to "About", root_path, class: "navbar-link" %> </p>
+            </div>
+       </div>
+       
+  </footer>
+</html>
